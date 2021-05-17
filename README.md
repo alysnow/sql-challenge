@@ -25,8 +25,19 @@ sql-challenge
 |   |__ table_schema.sql      # create table schema
 |
 |__ images/
-|   |__ csv_files.PNG         # clean csv files for tables and analysis
-|   |__ DataModeling_ERD.png  # Entity Relationship Model
+|   |__ Average_Salary_ByTitle_BarChart.png        # Matplotlib pyplot Bar chart
+|   |__ Common_Salary_Ranges_Histogram.png         # Matplotlib pyplot Histogram
+|   |__ csv_files.PNG                              # clean csv files for tables and analysis
+|   |__ DataModeling_ERD.png                       # Entity Relationship Model
+|   |__ epilogue.PNG                               # Query output table
+|   |__ question1.PNG                              # Query output table
+|   |__ question2.PNG                              # Query output table
+|   |__ question3.PNG                              # Query output table
+|   |__ question4.PNG                              # Query output table
+|   |__ question5.PNG                              # Query output table
+|   |__ question6.PNG                              # Query output table
+|   |__ question7.PNG                              # Query output table
+|   |__ question8.PNG                              # Query output table
 |
 |__ notebooks/
 |   |__ sqlalchemy.ipynb        # sqlalchemy jupyter notebook that contains charts for most common salary and average salary by title
@@ -37,15 +48,16 @@ sql-challenge
 # Usage
 
 ```
-# SQLAlchemy
-from sqlalchemy import create_engine
-
 # Pandas
 import pandas as pd
 
 # Dependencies
 import matplotlib.pyplot as plt
 import numpy as np
+import scipy.stats as stats
+
+# SQLAlchemy
+from sqlalchemy import create_engine
 
 ```
 
@@ -136,6 +148,20 @@ https://github.com/alysnow/sql-challenge/blob/main/EmployeeSQL/queries.sql
 Evidence in hand, you march into your boss's office and present the visualization. With a sly grin, your boss thanks you for your work. On your way out of the office, you hear the words, "Search your ID number." You look down at your badge to see that your employee ID number is 499942.
 
 ![chart](images/epilogue.PNG)
+
+
+# Histogram
+
+### Most Common Salary Ranges for Employees
+
+![chart](images/Common_Salary_Ranges_Histogram.png)
+
+
+# Bar Chart
+
+### Average Salary by Title
+
+![chart](images/Average_Salary_ByTitle_BarChart.png)
 
 
 # Contributor
